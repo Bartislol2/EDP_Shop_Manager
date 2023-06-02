@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefWidth="264.0" prefHeight="300" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.gawryszewski.edp_projekt.controller.ItemDescriptionController">
+   <children>
+      <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefWidth="264.0" prefHeight="600" spacing="10.0" style="-fx-background-color: grey">
+               <children>
+                  <Label text="Item:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="itemName" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin></Label>
+                  <Label text="Price:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="priceValue" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Description:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="itemDescription" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

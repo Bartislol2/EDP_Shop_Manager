@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.gawryszewski.edp_projekt.controller.HelloController">
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <padding>
+            <Insets top="60.0" />
+        </padding>
+
+        <Label>
+            <font>
+                <Font name="Times New Roman bold" size="60" />
+            </font>
+            Welcome to your shop
+        </Label>
+        <Button onAction="#switchToShop" prefWidth="500" text="Go to your products">
+          <font>
+             <Font name="Times New Roman" size="36.0" />
+          </font>
+        </Button>
+        <Button onAction="#switchToSearch" prefWidth="500" text="Look for a product">
+          <font>
+             <Font name="Times New Roman" size="36.0" />
+          </font>
+        </Button>
+    </VBox>
+</AnchorPane>

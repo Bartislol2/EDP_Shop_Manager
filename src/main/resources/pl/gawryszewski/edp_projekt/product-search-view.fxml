@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.gawryszewski.edp_projekt.controller.ProductSearchController">
+    <center>
+        <ScrollPane prefHeight="0" prefWidth="0" style="-fx-border-color: #a8a2a2; -fx-border-width: 1px;">
+            <FlowPane fx:id="itemDisplay" prefHeight="0" prefWidth="1100" />
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox alignment="center" style="-fx-border-color: #525252; -fx-border-width: 1px; -fx-background-color: grey">
+            <padding>
+                <Insets bottom="20" top="20" />
+            </padding>
+            <Button onAction="#switchBack" prefWidth="100.0" text="Return">
+                <font>
+                    <Font name="Times New Roman" size="20" />
+                </font>
+            </Button>
+        </HBox>
+    </bottom>
+    <left>
+        <VBox fx:id="menu" alignment="TOP_CENTER" prefHeight="0.0" prefWidth="266.0" style="-fx-border-color: #525252; -fx-border-width: 1px; -fx-background-color: grey" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tfInput" promptText="Enter product name">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+                </TextField>
+            <Spinner fx:id="offersAmount" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#searchByUserInput" prefWidth="100.0" text="Search">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+            <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ProgressBar>
+            <Label fx:id="loadingText" text="Fetching offers..." visible="false">
+               <font>
+                  <Font name="Times New Roman Italic" size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+                <Separator prefWidth="200.0" style="-fx-background-color: #a8a2a2">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Separator>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>
